@@ -1,0 +1,319 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.site-header	
+		.top-line
+			padding: 0 80px
+		
+// ≥992px
++media-breakpoint-down(md)
+	.site-header	
+		.top-line
+			padding: 0 70px
+		.navigation
+			position: absolute
+			width: 100%
+			height: 100%
+			background-color: #333333
+			top: 50px
+			left: 0
+			transition: 0.5s
+			ul
+				margin: 0 50px			
+		.header-composation	
+			padding: 270px 0
+			.welcom
+				font-size: 25px
+				.h1
+					font-size: 35px
+					margin: 20px		
+		.callback
+			width: 260px
+			height: 270px
+			border: 2px solid $accent
+			margin: 270px 40px
+			.formhead
+				width: 85%
+				margin-top: 17px
+				margin-left: 17px 
+				height: 25px
+			input, select
+				width: 85%
+				height: 25px
+				margin-top: 17px
+				margin-left: 17px 
+			.button
+				margin-top: 35px
+				margin-left: 135px 
+				border-radius: 7px
+				height: 30px
+				width: 100px	
+		.soc
+			display: none			
+
+	.s-services
+		.h2
+			font-size: 40px	
+			padding: 40px 0
+		.h3
+			font-size: 30px	
+		p
+			font-size: 18px		
+
+	.s-portfolio
+		.h2
+			padding-top: 58px
+			padding-bottom: 0
+			font-size: 40px
+		.h3
+			font-size: 25px
+			line-height: 18px
+			padding-top: 100px
+			padding-bottom: 25px
+		.portfolio-image
+			margin-top: 170px
+			background-color: $text
+			height: 180px	
+			width: 250px
+		.portfolio-composition
+			height: 320px	
+			width: 250px
+			font-size: 13px		
+	.s-about
+		.h2
+			font-size: 30px
+			padding-top: 200px
+			padding-bottom: 40px
+		.offers-composition
+			top: 3%		
+			.offer
+				color: $text
+				font-size: 10px
+				line-height: 32px			
+// ≥768px
++media-breakpoint-down(sm)
+	.site-header
+		.navigation
+			display: none
+		.top-line
+			padding: 0 50px	
+		.header-composation	
+			padding: 100px 0
+			margin: 0 18%	
+			.welcom
+				font-size: 20px
+				.h1
+					font-size: 30px
+					margin: 11px
+		.callback	
+			margin: 0 25%	
+	
+	.s-services
+		.h2
+			font-size: 40px	
+			padding: 70px 0
+		.h3
+			font-size: 20px
+			padding-top: 40px	
+		p
+			font-size: 15px	
+	.s-portfolio
+		min-height: 2850px
+		.h2
+			font-size: 25px
+			margin: 0 24%
+		.h3
+			font-size: 18px
+			line-height: 18px
+			padding-top: 40px
+			padding-bottom: 30px
+		.portfolio-image
+			margin-left: 24%
+			background-color: $text
+			height: 180px	
+			width: 250px
+		.portfolio-composition
+			margin-left: 24%
+			height: 320px	
+			width: 250px
+			font-size: 13px		
+			text-align: center		
+	.s-about
+		.h2
+			font-size: 20px
+			padding-top: 140px
+			padding-bottom: 100px
+		.offers-composition
+			top: 30%		
+			.offer
+				font-size: 10px
+				line-height: 32px		
+
+	.s-contacts
+		.h2
+			padding-top: 80px
+			font-size: 30px
+		.callback
+			width: 300px
+			height: 280px
+			min-height: 200px
+			.formhead	
+				font-size: 16px		
+			input, select
+				color: $text
+				width: 90%
+				height: 30px
+				margin-top: 17px
+				margin-left: 17px 
+				border-radius: 5px
+				background-color: $accent	
+				margin-top: 15px
+			.button
+				margin-left: 164px	
+				margin-top: 40px
+				height: 35px
+				width: 120px
+				font-size: 20px				
+// ≥576px
++media-breakpoint-down(xs)
+	.site-header
+		.header-composation
+			.welcom
+				font-size: 14px
+				.h1
+					font-size: 20px
+					margin: 11px	
+		.callback	
+			position: absolute
+		  margin: 0
+			padding: 0
+			top: 10vh	
+			left: 25%
+			transform: translate(-50%, -50%)
+			width: 250px
+			height: 250px
+			.button
+				margin-top: 25px
+				margin-left: 130px
+				border-radius: 7px
+				height: 30px
+				width: 100px			
+
+	.s-services
+		.h2
+			font-size: 30px
+			padding: 70px 0
+		.h3
+			font-size: 18px	
+		p
+			font-size: 14px	
+		.services-composition	
+			padding: 3% 0		
+	.share
+		width: 40px		
+		height: 40px	
+
+	.s-portfolio
+		min-height: 2350px
+		.h2
+			font-size: 25px
+			margin: 0 5%
+			padding-top: 50px
+		.h3
+			font-size: 18px
+			line-height: 18px
+			padding-top: 40px
+			padding-bottom: 10px
+		.portfolio-image
+			padding: 0
+			background-color: $text
+			height: 120px	
+			width: 200px
+			margin-top: 100px
+			margin-left: 5%
+			margin-right: 5%
+		.portfolio-composition
+			padding: 0
+			height: 280px	
+			width: 250px
+			margin-bottom: 50px
+			margin-left: 5%
+			margin-right: 5%
+			font-size: 13px		
+			text-align: left	
+	.s-about
+		.h2
+			font-size: 20px
+			padding-top: 140px
+			padding-bottom: 100px
+			text-align: center
+		.offers-composition
+			top: 30%			
+			.offer
+				font-size: 10px
+				line-height: 20px			
+	.s-contacts
+		.h2
+			padding-top: 100px
+			font-size: 26px
+		.callback
+			width: 250px
+			height: 250px
+			min-height: 200px
+			.formhead	
+				font-size: 13px		
+			input, select
+				color: $text
+				width: 90%
+				height: 25px
+				margin-top: 17px
+				margin-left: 17px 
+				border-radius: 5px
+				background-color: $accent	
+				margin-top: 15px
+			.button
+				margin-left: 140px	
+				margin-top: 40px
+				height: 30px
+				width: 100px
+				font-size: 15px		
+	.main-footer
+		min-height: 50px
+		height: 5%
+		.logo
+			padding: 10px		
+		.footer-social
+			.footer-soc
+				ul	
+					margin: 0
+					padding: 0
+					display: flex
+					li
+						list-style: none
+						a
+							height: 50px
+							line-height: 50px
+							padding-right: 5px
+							color: #fea400
+							text-decoration: none
+							display: block
+							&:hover
+								color: #ffffff
+								background-color: #d88f0a								
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
